@@ -29,10 +29,11 @@ console.log(i);
 //inizio il ciclo while
 while (i < shoppingList.length) {
     //AGGIUNGO IN PAGINA UN LI PER OGNI ELEMENTO DELLA LISTA
-    ul.innerHTML += `<li class="p-2">"QUESTO è FATTO CON INNER HTML:" ${shoppingList[i]}</li>`
+    ul.innerHTML += `<li class="my-p-2">"QUESTO è FATTO CON INNER HTML:" ${shoppingList[i]}</li>`
     //BONUS INSERISCO LI IN PAGINA TRAMITE .APPEND
     ul.append(li)
     li.innerText = "QUESTO è FATTO CON APPEND:" + " " + shoppingList[i]
+    li.classList.add("my-p-1")
     //Console.log del valore attuale della i che corrisponde anche al valore della cosa da comprare
     console.log(i, shoppingList[i])
     //aumento la i di 1 per far ripartire il ciclo while finchè non mi ha stampato tutti gli elementi della lista della spesa
