@@ -1,1 +1,5 @@
 /*********************** CSS UTILI ***********************/
+.p-2 {
+    padding: 2rem 0;
+    background-color: dodgerblue;
+}
