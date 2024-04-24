@@ -1,4 +1,6 @@
 console.log("Ciao Giuseppe");
+//RICHIAMO LA UL IN JS
+let ul = document.getElementById("shopping-list")
 
 //CREO LISTA DELLA SPESA CON ARRAY
 const shoppingList = [
@@ -25,6 +27,8 @@ let i = 0;
 console.log(i);
 //inizio il ciclo while
 while (i < shoppingList.length) {
+    //AGGIUNGO IN PAGINA UN LI PER OGNI ELEMENTO DELLA LISTA
+    ul.innerHTML += `<li>${shoppingList[i]}</li>`
     //Console.log del valore attuale della i che corrisponde anche al valore della cosa da comprare
     console.log(i, shoppingList[i])
     //aumento la i di 1 per far ripartire il ciclo while finchè non mi ha stampato tutti gli elementi della lista della spesa
